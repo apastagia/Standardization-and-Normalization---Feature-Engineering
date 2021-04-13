@@ -2,6 +2,8 @@
 
 Dataset link: https://www.kaggle.com/pankajvermacool/titanic-traincsv
 
+Classification Problem: Logistic Regression
+
 ## Difference between fit(), transform(), fit_transform(), predict() in sklearn
 
 ### Lifecycle
