@@ -4,9 +4,7 @@
 
 ### Lifecycle
 
-EDA -> FE(Feature Engineering) -> FS(Feature Selection) -> Model Creation -> Hyperparameter Tunning -> Model Deployment
-|-----------------------------------------------------|   |----------------------------------------|   |---------------|
-               Data Preprocessing                                     Model Training                           
+EDA -> FE(Feature Engineering) -> FS(Feature Selection) -> Model Creation -> Hyperparameter Tunning -> Model Deployment                          
                
 
 ## Data Preprocessing:
@@ -32,4 +30,20 @@ fit(): fit() is used in "Standard Scaler" to compute **"σ and μ"**.
 
 transform(): After performing fit() we perform transform(). In transform() it perform normalization formula. (Changing the data)
 
-fit_transform(): 
+fit_transform():
+    Input all features and o/p to the model firstly it perform fit(). fit() calculate parameters and weight. Then second it perform predict(). In predict() model input new data and using predict() function it generate o/p. 
+
+* fit_transform() used in model, it has two main function 1. fit() 2. predict()
+
+### What is difference in model and transformer?
+* model: in model only fit() is used for training data and only predict() is used for test data.
+
+* transformer: in transformer fit() and transform() are used for traning data and only transform() is used for test data.('coz new data is already in preprocessed form)
+
+
+
+                  Transformer                                         Model
+
+1. Training Data: fit(), transform()             -->                 .fit()
+
+2. Test Data:     transform()                    -->                 .predict()
