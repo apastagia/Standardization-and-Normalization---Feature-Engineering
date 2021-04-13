@@ -38,12 +38,12 @@ fit_transform():
 ### What is difference in model and transformer?
 * model: in model only fit() is used for training data and only predict() is used for test data.
 
-* transformer: in transformer fit() and transform() are used for traning data and only transform() is used for test data.('coz new data is already in preprocessed form)
+* transformer: in transformer fit_transform() are used for traning data and only transform() is used for test data.('coz new data is already in preprocessed form)
 
 
 
                   Transformer                            Model
 
-1. Training Data: fit(), transform()                                     -->                 .fit()
+1. Training Data: fit_transform()                                        -->                 .fit()
 
 2. Test Data:     transform()                                            -->                 .predict()
