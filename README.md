@@ -10,7 +10,7 @@ EDA -> FE(Feature Engineering) -> FS(Feature Selection) -> Model Creation -> Hyp
 ## Data Preprocessing:
     Transformers: Used for "feature transformation".
     
-**Example:** 
+Example: 
 1. **StandardScaler: Convert the feature "μ = 0", "σ = 1 (Standard deviation)" 
 2. **Min-Max Scaler
 3. **PCA**
@@ -21,8 +21,8 @@ EDA -> FE(Feature Engineering) -> FS(Feature Selection) -> Model Creation -> Hyp
 ## Model Training:
     We have objects like "models". Only learning the parameters. Training models.
     
-**Example: **
-Linear Regression, Logistic Regression, RandomForest, Decision Tree, etc. ...
+Example:
+**Linear Regression, Logistic Regression, RandomForest, Decision Tree, etc. ...**
 
 ### Where we use fit(), transform(), fit_transform(), predict()?
 
@@ -42,8 +42,8 @@ fit_transform():
 
 
 
-                  Transformer                                         Model
+                  Transformer                                                                 Model
 
-1. Training Data: fit(), transform()             -->                 .fit()
+1. Training Data: fit(), transform()                                     -->                 .fit()
 
-2. Test Data:     transform()                    -->                 .predict()
+2. Test Data:     transform()                                            -->                 .predict()
