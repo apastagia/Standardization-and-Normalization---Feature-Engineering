@@ -11,10 +11,10 @@ EDA -> FE(Feature Engineering) -> FS(Feature Selection) -> Model Creation -> Hyp
     Transformers: Used for "feature transformation".
     
 Example: 
-1. **StandardScaler: Convert the feature "μ = 0", "σ = 1 (Standard deviation)" 
-2. **Min-Max Scaler
-3. **PCA**
-4. **Imputer: ** To handle the nan values
+1. StandardScaler: Convert the feature "μ = 0", "σ = 1 (Standard deviation)" 
+2. Min-Max Scaler
+3. PCA
+4. Imputer: To handle the nan values
 
 
 
@@ -42,7 +42,7 @@ fit_transform():
 
 
 
-                  Transformer                                                                 Model
+                  Transformer                            Model
 
 1. Training Data: fit(), transform()                                     -->                 .fit()
 
