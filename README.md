@@ -45,9 +45,13 @@ fit_transform():
 * transformer: in transformer fit_transform() are used for traning data and only transform() is used for test data.('coz new data is already in preprocessed form)
 
 * Transformer: (Used in Data Preprocessing phase)
+
   Training data: fit_transform() perform
+  
   Test data: transform() perform
   
 * Model: (Used in Model Creation phase)
+  
   Training data: .fit() perform
+  
   Test data: .predict() perform
